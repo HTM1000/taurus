@@ -91,6 +91,11 @@ section {
 	padding: 5rem 9%;
 }
 
+.header .logo .foto {
+	width: 80px;
+	height: 80px;
+}
+
 .header.active {
 	background: #637afa;
 	box-shadow: var(--box-shadow);
@@ -99,9 +104,15 @@ section {
 }
 
 .header .logo {
-	font-size: 2.5rem;
-	font-weight: bolder;
+	display: flex;
+	flex-direction: row;
+}
+
+.header .nome {
+	font-size: 1.5rem;
+	font-weight: bold;
 	color: var(--white);
+	padding-top: 2.5rem;
 }
 
 .header .logo i {
@@ -178,6 +189,12 @@ section {
 
 .about .row .image {
 	flex: 1 1 30rem;
+	max-width: 40%;
+	max-height: 40%;
+}
+
+.about .row .image > img {
+	border-radius: 50px;
 }
 
 .about .row .image img {
